@@ -1,0 +1,35 @@
+:root{
+    --pg:#555555;
+    --brand1:#0872b9;
+    --brand2:#5bc5f4;
+    --white:#ffffff;
+    --black:#353535;
+    --border:1px solid red;
+    --font:'Roboto-Regular';
+}
+
+p{
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "open-sans-regular";
+}
+
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto/Roboto-Bold.ttf');
+}
+.red_color{
+    color:red;
+}

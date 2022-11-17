@@ -189,7 +189,7 @@
   align-items: center;
   background-color: #ffffff;
   padding: 90px 85px 70px 85px;
-  box-shadow: 0px 0px 5px 2px rgba(114, 112, 112, 0.71);
+  box-shadow: 0px 0px 5px 2px rgba(114, 112, 112, 0.5);
 }
 #community .process .process_contant {
   display: flex;
@@ -281,6 +281,9 @@
   font-weight: 300;
   text-align: center;
 }
+#services {
+  margin: 93px 0px 95px 0px;
+}
 #services .edition {
   display: inline-flex;
   flex-wrap: wrap;
@@ -291,7 +294,7 @@
 }
 #services .edition .edition_left {
   padding: 10px 20px 10px 20px;
-  background-color: #5DB442;
+  background-color: #ffffff;
   width: 50%;
   border-radius: 25px 0px 0px 25px;
   border: 1px solid #ECECEC;
@@ -300,14 +303,14 @@
 #services .edition .edition_left p {
   font-size: 12px;
   line-height: 12px;
-  color: #ffffff;
+  color: #333333;
   font-weight: 400;
   font-family: 'Roboto-Regular';
   text-align: center;
 }
 #services .edition .edition_or {
   position: absolute;
-  background-color: blue;
+  background-color: #4CA368;
   border-radius: 50%;
   width: 20px;
 }
@@ -335,6 +338,15 @@
   font-weight: 400;
   font-family: 'Roboto-Regular';
   text-align: center;
+}
+#services .edition .edition_left:hover,
+#services .edition .edition_right:hover {
+  background-color: #5DB442;
+  transition: all linear 250ms;
+}
+#services .edition .edition_left:hover p,
+#services .edition .edition_right:hover p {
+  color: #ffffff;
 }
 #services .service_card {
   display: flex;
@@ -400,6 +412,17 @@
   font-family: var(--font);
   text-align: center;
 }
+#services .service_card .doler:hover {
+  background-color: #5DB442;
+  border: 1px solid #ffffff;
+  transition: all linear 250ms;
+}
+#services .service_card .doler:hover h3 {
+  color: #ffffff;
+}
+#services .service_card .doler:hover p {
+  color: #ffffff;
+}
 #services .service_card .purchase {
   display: flex;
   flex-wrap: wrap;
@@ -419,13 +442,14 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 #services .service_card .purchase ul li i {
   font-size: 10px;
   color: #5db442;
   text-align: center;
   line-height: 10px;
+  margin-right: 5px;
 }
 #services .service_card .purchase ul li .red_color {
   color: red;
@@ -435,6 +459,10 @@
   font-family: var(--font);
   font-size: 10px;
   line-height: 10px;
+}
+#services .service_card .purchase ul li:hover p {
+  font-size: 15px;
+  transition: all ease-in-out 250ms;
 }
 #services .service_card .purchase button {
   font-size: 10px;
@@ -449,6 +477,7 @@
   border: 1px solid #ECECEC;
   border-radius: 25px;
   background-color: #FFFFFF;
+  text-transform: uppercase;
 }
 #services .service_card .purchase button:hover {
   background-color: #5DB442;
@@ -459,4 +488,62 @@
 #services .service_card:hover p::before {
   background-color: #5DB442;
   transition: all ease-in-out 400ms;
+}
+#analytic {
+  background-image: url(../img/patern_overlay1.jpg);
+  padding: 95px 0px ;
+}
+#analytic .edition_card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 15px 40px 15px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px 2px rgba(114, 112, 112, 0.3);
+}
+#analytic .edition_card i {
+  font-size: 60px;
+  color: #56A73D;
+  position: relative;
+  padding: 20px 0px ;
+}
+#analytic .edition_card i::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #CCCCCC;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#analytic .edition_card h4 {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #333333;
+  font-weight: 400;
+  font-family: 'Roboto-Medium';
+  text-align: center;
+  padding: 20px 0px ;
+}
+#analytic .edition_card p {
+  font-size: 12px;
+  line-height: 22px;
+  color: #777777;
+  font-weight: 300;
+  font-family: var(--font);
+  text-align: center;
+  padding: 15px 0px ;
+}
+#analytic .edition_card:hover {
+  background-color: #5DB442;
+  transition: all linear 350ms;
+}
+#analytic .edition_card:hover i::after,
+#analytic .edition_card:hover h4,
+#analytic .edition_card:hover p,
+#analytic .edition_card:hover i {
+  color: #ffffff;
 }

@@ -1,13 +1,83 @@
-/* // X-Small devices (portrait phones, less than 576px) */
+
 /* // No media query for `xs` since this is the default in Bootstrap */
 
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) {
+    #header .social_link ul {
+        justify-content: center;
+    }
+    #header .parsonal {
+        justify-content: center;
+    }
+    #header .parsonal .contact {
+        padding: 0px 15px;
+    }
+    #header .parsonal .email {
+        padding-left: unset;
+        padding: 0px 15px;
+    }
+    #community .process {
+        padding: 80px 10px 55px 10px;
+    }
+    #community .process .process_contant .left_icon {
+        margin-right: 20px;
+    }
+    #community .process .process_contant .left_icon i {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    #community .process .process_contant .right_process h3 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    #community .process .process_contant .right_process p {
+        font-size: 14px;
+        line-height: 26px;
+    }
+    #services .service_card {
+        margin-bottom: 20px;
+    }
+    .common_h1{
+        font-size: 40px;
+    }
+    #services .service_card .purchase ul li:hover p {
+        font-size: 12px;
+    }
+    #footer_description .line_2, #footer_description .line_3, #footer_description .line_4 {
+        margin-top: 40px;
+    }
+    footer {
+        padding: 34px 0px;
+    }
+    footer .copy {
+        align-items: flex-start;
+        width: 100%;
+        flex-direction: column;
+    }
+    footer .copy h3 {
+        padding-bottom: 15px;
+    }
+    footer .copy .text_copy {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
 /* // Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {}
+
+@media (max-width: 768px) {
+    #banner .image_laptop img{
+        width: 100%;
+    }
+    #footer_description .line_1 {
+        padding-right: unset;
+    }
+}
 
 /* // Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {}
-    
-/* // Large devices (desktops, 992px and up) */
+
 @media (max-width: 992px) {
     #nav #nav_trigger,
     #nav #nav_close {
@@ -69,10 +139,17 @@
     .nav_close:hover {
         color: red
     }
+    #footer_description .line_3, #footer_description .line_4 {
+        margin-top: 40px;
+    }
 }
 
-/* // X-Large devices (large desktops, 1200px and up) */
+/* // Large devices (desktops, 992px and up) */
+
 @media (max-width: 1200px) {}
 
-/* // XX-Large devices (larger desktops, 1400px and up) */
+/* // X-Large devices (large desktops, 1200px and up) */
+
 @media (max-width: 1400px) {}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
